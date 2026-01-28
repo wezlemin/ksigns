@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khoindvn Fallback Install Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --bg: #0f1220;
+            --card: #171a2e;
+            --text: #e6e7ee;
+            --muted: #a8abc9;
+            --accent: #6aa7ff;
+            --warning: #ffb020;
+            --border: #262a4a;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 24px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: var(--muted);
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+
+        .warning {
+            color: var(--warning);
+            font-weight: 600;
+        }
+
+        .link-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .item {
+            background: #10132a;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .item strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .item a {
+            color: var(--accent);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Khoindvn Fallback Installation Page</h1>
+    <p>
+        If <strong>khoindvn.io.vn</strong>, <strong>api.khoindvn.io.vn</strong>, or
+        <strong>download.khoindvn.io.vn</strong> does not load, use this page instead.
+    </p>
+
+    <div class="card">
+        <p class="warning">Important requirements:</p>
+        <ul>
+            <li>❌ Do NOT use a VPN</li>
+            <li>✅ Use <strong>Safari</strong></li>
+            <li>✅ Install the Khoindvn anti-revoke DNS before downloading</li>
+        </ul>
+    </div>
+
+    <h2>Khoindvn Anti-Revoke DNS</h2>
+    <div class="card link-list">
+        <div class="item">
+            <a href="https://github.com/Nyasami/getUDID-JS/releases/download/1.0.0/signed_khoindvn_fullchain.mobileconfig">
+                Download DNS Profile
+            </a>
+        </div>
+    </div>
+
+    <h2>Available itms-services Links</h2>
+    <p>Copy one link at a time and paste it into Safari.  
+       If you get an integrity error, try another.</p>
+
+    <div class="card link-list">
+        <div class="item">
+            <strong>Qingdao Rural Commercial Bank Co., Ltd</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/48bhl.plist">Install</a>
+        </div>
+
+        <div class="item">
+            <strong>Commission on Elections</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/3z8yi.plist">Install</a>
+        </div>
+
+        <div class="item">
+            <strong>Commission on Elections (V1)</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/9nd31.plist">Install</a>
+        </div>
+
+        <div class="item">
+            <strong>Commission on Elections (V2)</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/c7g2e.plist">Install</a>
+        </div>
+
+        <div class="item">
+            <strong>Wasu Media & Network Co Ltd</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/xi6ou.plist">Install</a>
+        </div>
+
+        <div class="item">
+            <strong>Luoyang Postal Administration</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/t0bu0.plist">Install</a>
+        </div>
+
+        <div class="item">
+            <strong>Etisalat – Emirates Telecommunications Corporation</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/2i4vn.plist">Install</a>
+        </div>
+
+        <div class="item">
+            <strong>China National Heavy Duty Truck Group Co Ltd</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/3xrpd.plist">Install</a>
+        </div>
+
+        <div class="item">
+            <strong>China Telecommunications Corp</strong>
+            <a href="itms-services://?action=download-manifest&url=https://wezlemin.github.io/ksigns/oprhq.plist">Install</a>
+        </div>
+    </div>
+
+    <footer>
+        Created by <strong>@kgthetwo</strong> • Delta Community Server
+    </footer>
+</div>
+
+</body>
+</html>
