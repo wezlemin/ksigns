@@ -191,6 +191,17 @@ function closePopup() {
 }
 </script>
 
+<script>
+window.onload = function() {
+    if (!localStorage.getItem("seenPopup")) {
+        document.getElementById("popup").style.display = "flex";
+        localStorage.setItem("seenPopup", "true");
+    } else {
+        document.getElementById("popup").style.display = "none";
+    }
+}
+</script>
+
 <div class="container">
 
 <div class="header">
@@ -204,7 +215,7 @@ function closePopup() {
 <div class="warning-box">
 DO NOT share this page unless users have already tried using Khoindvn with mobile data or a hotspot. These are the same KSigns as the ones on Khoindvn! <br><br>
   
-This site is not a virus. You can check the source for it <a href="https://github.com/wezlemin/ksignz">here</a>
+This site does not host malware. You can check the source for it <a href="https://github.com/wezlemin/ksignz">here</a>
 and compare the files to the ones on the official Khoindvn website. <br> <br>
 
 Unfortunately, the Delta managers are idiots and will not trust this site (even if it's safer by having no advertisements).
